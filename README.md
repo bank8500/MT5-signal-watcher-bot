@@ -9,4 +9,7 @@ Automated trading signal bot using Python + MetaTrader5
 - Cooldown protection
 
 ## Setup
+
+```bash
 pip install -r requirements.txt
+```
