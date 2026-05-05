@@ -4,19 +4,22 @@ import MetaTrader5 as mt5
 import pandas as pd
 import requests
 import winsound
+import os
+from dotenv import load_dotenv  
 
 # ================= CONFIG =================
-MT5_PATH = r"C:\Program Files\MetaTrader 5\terminal64.exe"
-SYMBOL = "XAUUSDm"
+load_dotenv()
+
+MT5_PATH = os.getenv("MT5_PATH")
+SYMBOL = os.getenv("SYMBOL", "XAUUSDm")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 TIMEFRAME_ENTRY = mt5.TIMEFRAME_M5
 TIMEFRAME_TREND = mt5.TIMEFRAME_M15
 
 BARS = 150
 CHECK_EVERY_SECONDS = 10
-
-BOT_TOKEN = "Your Token"
-CHAT_ID = "Your Chat ID"
 
 START_HOUR = 10
 END_HOUR = 23
