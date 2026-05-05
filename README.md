@@ -13,3 +13,4 @@ Automated trading signal bot using Python + MetaTrader5
 ```bash
 pip install -r requirements.txt
 ```
+พัฒนาโดย แบงค์คนสวย
